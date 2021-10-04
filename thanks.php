@@ -7,7 +7,7 @@
        if(isset($_POST['user_message']))$user_message = $_POST['user_message'];
 
 if (filter_var($user_email, FILTER_VALIDATE_EMAIL) && (!empty($user_email)) && (!empty($user_name)) && preg_match ( " /^.+@.+.[a-zA-Z]{2,}$/ ", $user_email ) )
-echo("Merci de nous avoir contacté $user_name $user_Prenoms nous allons prendre contacte avec vous au mail suivant : $user_email, votre numéro de téléphone est le suivant : $user_telephone, vous nous avez contacté au sujet de $user_sujet, votre message est le suivant : $user_message");
+echo("Merci de nous avoir contacté $user_name $user_firstname nous allons prendre contacte avec vous au mail suivant : $user_email, votre numéro de téléphone est le suivant : $user_telephone, vous nous avez contacté au sujet de $user_sujet, votre message est le suivant : $user_message");
 
 
 ?>
